@@ -1,24 +1,46 @@
-# Next.js Property Rental (Starter)
+# 🏡 Next Rentals
 
-Minimal starter project for the Property Rental Platform test.
+A modern, server-rendered **Property Rental Platform** built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.  
+This project demonstrates fetching data from an API, dynamic routing, modals, form handling, and a polished responsive UI.
 
-## Features
-- Next.js App Router (TypeScript)
-- Tailwind CSS
-- Server components for pages (ISR via `revalidate`)
-- Booking modal (client) with basic validation
+---
 
-## Setup
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Run dev server:
-   ```bash
-   npm run dev
-   ```
-3. Open http://localhost:3000
+## ✨ Features
 
-## Notes
-- Remote images may require adding domains in `next.config.js`.
-- This is a starter skeleton. Expand components, accessibility, tests, and CI as needed.
+- **Home Page (/)**  
+  - Fetches and displays a list of properties from an API.  
+  - Responsive grid layout for property cards.  
+  - Each property shows: image, title, description, price, and rating.  
+
+- **Property Detail Page (/property/[id])**  
+  - Dynamically routed page for each property.  
+  - Full details view with image gallery.  
+  - Includes **Book Now** button.  
+
+- **Booking Modal**  
+  - Opens a form to collect guest info (Check-in, Check-out, Guests, Name).  
+  - Auto-calculates **total cost** (nights × price).  
+  - Includes basic form validation and mocked submission.  
+
+- **Navigation Header**  
+  - Links to `Home`, `About Us`, and `Contact Us`.  
+  - Current active page highlighted.  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 14 (App Router)](https://nextjs.org/docs/app)  
+- **Language**: TypeScript  
+- **Styling**: Tailwind CSS  
+- **State Management**: React Hooks + Context API  
+- **API**: [DummyJSON Products API](https://dummyjson.com/products) (for properties with images)  
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/SaniaAbbasi/webWizTask.git
+cd E:\webWizTask
